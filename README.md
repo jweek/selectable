@@ -4,7 +4,7 @@
 
 **Selectable** is a lightweight browser extension that allows users to extract structured data from web tables and text elements. Unlike standard browser selection, Selectable preserves row and column structure, making it perfect for copying data directly into Excel, Google Sheets, or CSV files.
 
-**Published by:** [Black Ninja](https://blackninja.com)
+**Published by:** [BlackNinja](https://blackninja.com)
 
 ## 🚀 Features
 
@@ -72,7 +72,7 @@ Firefox uses a slightly different background script configuration for Manifest V
 
 ## 🛠️ Usage
 
-1.  Navigate to a web page containing a table (e.g., [Wikipedia List of Presidents](https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States)).
+1.  Navigate to a web page containing a table (e.g., [Wikipedia List of Atari 2600 Games](https://en.wikipedia.org/wiki/List_of_Atari_2600_games)).
 2.  Click the **Selectable** icon in the browser toolbar.
 3.  **Phase 1 (Table Selection):** Hover over any table and click it to "lock" the selection mode to that table.
 4.  **Phase 2 (Cell Selection):**
