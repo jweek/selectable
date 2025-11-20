@@ -1,38 +1,51 @@
-/* --- Highlights --- */
-.selectable-highlight-hover {
-  outline: 3px solid #3498db !important;
-  cursor: crosshair !important;
-  background-color: rgba(52, 152, 219, 0.1) !important;
+/* --- Phase 1: Discovery Mode --- */
+/* Automatically applied to ALL tables when addon activates */
+.selectable-table-candidate {
+  outline: 2px dashed rgba(43, 162, 242, 0.6) !important;
+  outline-offset: 2px;
+  position: relative; /* Ensure outline sits on top */
 }
 
+/* --- Highlights (Hover) --- */
+.selectable-highlight-hover {
+  /* Tint Blue - Safe for Dark Mode */
+  background-color: rgba(43, 162, 242, 0.15) !important;
+  outline: 2px solid #2ba2f2 !important;
+  cursor: crosshair !important;
+}
+
+/* --- Highlights (Selected) --- */
+.selectable-selected {
+  /* Tint Orange - Safe for Dark Mode */
+  background-color: rgba(242, 123, 43, 0.25) !important;
+  outline: 2px solid #f27b2b !important;
+}
+
+/* --- Locked Table Mode --- */
 .selectable-table-locked {
-  outline: 4px solid #e67e22 !important; /* Orange border for locked table */
-  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5) !important; /* Dim the rest of the page */
+  outline: 4px solid #2ba2f2 !important;
+  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.6) !important; /* Dim the page */
   position: relative;
   z-index: 9999;
-  background-color: white; /* Ensure legibility */
+  /* Note: We do NOT set background-color here to preserve Dark Mode text contrast */
 }
 
-.selectable-selected {
-  outline: 2px solid #2ecc71 !important;
-  background-color: rgba(46, 204, 113, 0.3) !important;
-}
-
-/* --- Control Panel (Shared Container) --- */
+/* --- Control Panel --- */
 #selectable-control-panel {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: white;
+  background-color: #ffffff; /* Panel stays white/clean */
+  color: #333;
   padding: 10px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
   z-index: 2147483647;
   font-family: "Segoe UI", sans-serif;
   width: 220px;
+  border: 1px solid #ddd;
 }
 
-/* --- Phase 1: Select Table Layout --- */
 .selectable-phase1-layout {
   display: flex;
   align-items: center;
@@ -46,7 +59,6 @@
   font-size: 14px;
 }
 
-/* --- Phase 2: Grid Layout --- */
 .selectable-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -69,9 +81,12 @@
 }
 
 .selectable-btn.primary {
-  background-color: #2ecc71;
+  background-color: #f27b2b; /* Brand Orange */
   color: white;
-  grid-column: span 1;
+}
+
+.selectable-btn.primary:hover {
+  background-color: #d66b22;
 }
 
 .selectable-btn.secondary {
@@ -90,10 +105,6 @@
 
 .selectable-btn.danger:hover {
   background-color: #c0392b;
-}
-
-.selectable-btn.primary:hover {
-  background-color: #27ae60;
 }
 
 .selectable-btn.disabled {
@@ -115,7 +126,7 @@
 
 .selectable-handle-btn {
   position: absolute;
-  background-color: #34495e;
+  background-color: #2ba2f2; /* Brand Blue */
   color: white;
   border: none;
   border-radius: 50%;
@@ -133,7 +144,7 @@
 }
 
 .selectable-handle-btn:hover {
-  background-color: #2980b9;
+  background-color: #1d89cf;
   transform: scale(1.1);
 }
 

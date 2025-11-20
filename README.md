@@ -4,7 +4,7 @@
 
 **Selectable** is a lightweight browser extension that allows users to extract structured data from web tables and text elements. Unlike standard browser selection, Selectable preserves row and column structure, making it perfect for copying data directly into Excel, Google Sheets, or CSV files.
 
-**Published by:** [BlackNinja](https://blackninja.com)
+**Published by:** [Black Ninja](https://blackninja.com)
 
 ## 🚀 Features
 
@@ -98,4 +98,4 @@ Distributed under the MIT License. See `LICENSE.md` for more information.
 
 ---
 
-**Contact:** jweek@blackninja.com | [BlackNinja.com](https://blackninja.com)
+**Contact:** [BlackNinja.com](https://blackninja.com/contact)
