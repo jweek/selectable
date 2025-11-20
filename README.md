@@ -28,7 +28,7 @@
 
 ### Method 1: Microsoft Edge / Chrome Web Store
 
-_Links coming soon!_
+[Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/selectable/jfelmeeloenheghockdfpipjjobeloga)
 
 ### Method 2: Manual Installation (Developer Mode)
 
