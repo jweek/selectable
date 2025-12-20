@@ -6,7 +6,7 @@
 
 **Published by:** [Black Ninja](https://blackninja.com)
 
-## 🚀 Features
+## Features
 
 - **Smart Table Detection:** Automatically identifies `<table>` elements on any webpage.
 - **Structural Selection:** Adds interactive handles to select entire rows or columns with a single click.
@@ -14,19 +14,21 @@
 - **Spreadsheet Ready:** Copies data to the clipboard in Tab-Separated Values (TSV) format, preserving the grid layout.
 - **Privacy First:** Runs entirely offline. No data is ever sent to external servers.
 
-## 🌐 Browser Compatibility
+## Browser Compatibility
 
-| Browser                     | Status     | Notes                                               |
-| :-------------------------- | :--------- | :-------------------------------------------------- |
-| **Microsoft Edge**          | ✅ Native  | Fully supported via Add-ons Store.                  |
-| **Google Chrome**           | ✅ Native  | Fully supported.                                    |
-| **Brave / Opera / Vivaldi** | ✅ Native  | Fully supported (Chromium engine).                  |
-| **Mozilla Firefox**         | ⚠️ Tweaks  | Requires simple `manifest.json` change (see below). |
-| **Safari**                  | 🛠️ Convert | Requires Xcode conversion.                          |
+| Browser                     | Status  | Notes                                               |
+| :-------------------------- | :------ | :-------------------------------------------------- |
+| **Microsoft Edge**          | Native  | Fully supported via Add-ons Store.                  |
+| **Google Chrome**           | Native  | Fully supported via Add-ons Store.                  |
+| **Brave / Opera / Vivaldi** | Native  | Fully supported (Chromium engine).                  |
+| **Mozilla Firefox**         | Tweaks  | Requires simple `manifest.json` change (see below). |
+| **Safari**                  | Convert | Requires Xcode conversion.                          |
 
-## 📦 Installation
+## Installation
 
-### Method 1: Microsoft Edge / Chrome Web Store
+### Method 1: Google Chrome / Microsoft Edge
+
+[Chrome Web Store](https://chromewebstore.google.com/detail/selectable/inhihjkhgknepnpkmacchnmhgmohbeng)
 
 [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/selectable/jfelmeeloenheghockdfpipjjobeloga)
 
@@ -70,7 +72,7 @@ Firefox uses a slightly different background script configuration for Manifest V
 5.  Click **Load Temporary Add-on**.
 6.  Select any file in the extension folder (e.g., `manifest.json`).
 
-## 🛠️ Usage
+## Usage
 
 1.  Navigate to a web page containing a table (e.g., [Wikipedia List of Atari 2600 Games](https://en.wikipedia.org/wiki/List_of_Atari_2600_games)).
 2.  Click the **Selectable** icon in the browser toolbar.
@@ -81,18 +83,18 @@ Firefox uses a slightly different background script configuration for Manifest V
     - Use the **Control Panel** (bottom right) to "Select All", "Clear", or "Copy".
 5.  Click **"Copy Cells"** to save the data to your clipboard.
 
-## 🔧 Tech Stack
+## Tech Stack
 
 - **Core:** Vanilla JavaScript (ES6+), HTML5, CSS3.
 - **Architecture:** Manifest V3 (Background Service Worker + Content Script Injection).
 - **Storage:** None (In-memory only).
 
-## 🔒 Privacy Policy
+## Privacy Policy
 
 This extension does not collect, store, or transmit any user data. All processing happens locally on your device.
 For more details, please see our [Privacy Policy](privacy.md).
 
-## 📄 License
+## License
 
 Distributed under the MIT License. See `LICENSE.md` for more information.
 
